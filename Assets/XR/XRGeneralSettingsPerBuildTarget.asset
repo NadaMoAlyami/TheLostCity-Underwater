@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream
 --- !u!114 &-8466304451531153332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,6 +29,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 782556186783137734}
   m_InitManagerOnStart: 1
+=======
+>>>>>>> Stashed changes
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
   m_Name: XRGeneralSettingsPerBuildTarget
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   Keys: 0100000007000000
   Values:
   - {fileID: -3663804562911568926}
@@ -78,3 +82,7 @@ MonoBehaviour:
   m_AutomaticRunning: 0
   m_Loaders:
   - {fileID: 11400000, guid: 53320d15db78e584385f6860068c390e, type: 2}
+=======
+  Keys: 
+  Values: []
+>>>>>>> Stashed changes
