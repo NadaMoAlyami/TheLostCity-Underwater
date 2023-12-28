@@ -199,7 +199,11 @@
     },
     "com.unity.xr.management": {
       "version": "4.4.0",
+<<<<<<< Updated upstream
       "depth": 2,
+=======
+      "depth": 0,
+>>>>>>> Stashed changes
       "source": "registry",
       "dependencies": {
         "com.unity.modules.subsystems": "1.0.0",
@@ -209,6 +213,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< Updated upstream
     "com.unity.xr.oculus": {
       "version": "4.0.0",
       "depth": 1,
@@ -221,6 +226,11 @@
     "com.unity.xr.openxr": {
       "version": "1.8.2",
       "depth": 1,
+=======
+    "com.unity.xr.openxr": {
+      "version": "1.8.2",
+      "depth": 0,
+>>>>>>> Stashed changes
       "source": "registry",
       "dependencies": {
         "com.unity.xr.management": "4.0.1",
