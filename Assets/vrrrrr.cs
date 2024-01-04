@@ -9,6 +9,7 @@ public class vrrrrr : MonoBehaviour
     public Canvas Canvas;
     public GameObject Player;
     public int offset;
+    private Animator anim;
 
     private void Update()
     {
@@ -16,11 +17,13 @@ public class vrrrrr : MonoBehaviour
         {
             questionMark.gameObject.SetActive(false);
             Canvas.gameObject.SetActive(true);
+            anim.SetTrigger("talks");
         }
         else
         {
             questionMark.gameObject.SetActive(true);
             Canvas.gameObject.SetActive(false);
+            anim.SetTrigger("away");
         }
     }
     /* public void OnTriggerEnter(Collider other)
