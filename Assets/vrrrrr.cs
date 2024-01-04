@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class vrrrrr : MonoBehaviour
 {
-    public GameObject gm;
+    public GameObject questionMark;
+    public Canvas Canvas;
     public GameObject Player;
     public int offset;
 
@@ -12,11 +14,13 @@ public class vrrrrr : MonoBehaviour
     {
         if (Vector3.Distance(gameObject.transform.position, Player.transform.position) < offset)
         {
-            gm.gameObject.SetActive(false);
+            questionMark.gameObject.SetActive(false);
+            Canvas.gameObject.SetActive(true);
         }
         else
         {
-            gm.gameObject.SetActive(true);
+            questionMark.gameObject.SetActive(true);
+            Canvas.gameObject.SetActive(false);
         }
     }
     /* public void OnTriggerEnter(Collider other)
