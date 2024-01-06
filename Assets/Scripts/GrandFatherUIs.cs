@@ -8,7 +8,7 @@ public class GrandFatherUIs : MonoBehaviour
 
     public GameObject Canvas;
     public GameObject QuestionMark;
-    public GameObject GrandFatherPuzzle;
+    //public GameObject GrandFatherPuzzle;
     public GameObject Player;
     //  public AudioClip Sounds;
     public AudioSource AudioSource;
@@ -21,14 +21,16 @@ public class GrandFatherUIs : MonoBehaviour
         if (Vector3.Distance(gameObject.transform.position, Player.transform.position) < offset)
         {
             QuestionMark.SetActive(false);
-            GrandFatherPuzzle.SetActive(true);
-            GrandFatherTimer();
+         //   GrandFatherPuzzle.SetActive(true);
+           // GrandFatherTimer();
+            StartCoroutine(GrandFatherTimer());
 
         }
         IEnumerator GrandFatherTimer()
         {
-            yield return new WaitForSeconds(20f);
-            GrandFatherPuzzle.SetActive(false);
+            yield return new WaitForSeconds(3f);
+          //  DestroyObject(GrandFatherPuzzle);
+            //GrandFatherPuzzle.SetActive(false);
             Canvas.SetActive(true);
             AudioSource.Play();
 
